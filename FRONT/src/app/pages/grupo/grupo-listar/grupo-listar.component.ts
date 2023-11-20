@@ -11,7 +11,7 @@ import { Grupo } from '../../../models/grupo.model';
 export class GrupoListarComponent {
 
   colunasTabela: string[] = [
-    "grupoId",
+    "id",
     "nome",
     "descricao",
   ];
@@ -22,8 +22,7 @@ export class GrupoListarComponent {
     private client: HttpClient,
     private snackBar: MatSnackBar
   ) {
-    //Um problema de CORS ao fazer uma requisição para a
-    //nossa API
+
   }
 
   ngOnInit(): void {
