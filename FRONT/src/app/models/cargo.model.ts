@@ -1,9 +1,9 @@
 import { UsuarioOperacional } from './usuarioOperacional.model';
 import { UsuarioGerencial } from './usuarioGerencial.model';
-export interface Grupo {
-  grupoId?: number,
+export interface Cargo {
+  cargoId?: number,
   nome: string,
   descricao: string,
-  usuarioOperacional?: UsuarioOperacional[],
-  usuarioGerencial?: UsuarioGerencial,
+  usuarioOperacional: UsuarioOperacional[],
+  usuarioGerencial: UsuarioGerencial[],
 }
